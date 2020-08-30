@@ -1,0 +1,187 @@
+/* 統一設定 */
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color:#3F5D45;
+  
+}
+
+a{
+  text-decoration: none;
+  font-weight:bold;
+  display: block;
+  color:#3F5D45;
+}
+
+img{ display: block; }
+
+/* 開始 */
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+ 
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+
+  ul{
+    display: flex;
+    justify-content: center;
+    
+    a{
+      font-size:16px;
+      padding: 20px 30px;
+    }
+  }
+}
+
+.header-img {
+  width: 210px;
+  height: 40px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.banner{
+  img{
+    margin-bottom: 60px;
+  }
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.leftMenu{
+  li,h2{
+    width: 300px;
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+  }  
+  
+  h2{
+    background-color: #3F5D45;
+    color:#EAF0ED;
+  }
+    
+  li:hover{
+    background-color: #EAF0ED;
+  }
+  
+}
+
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  li{
+    margin: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+    
+
+  .pin{
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #EAF0ED;
+    font-size: 16px;
+    line-height: 20px;
+    background: #3F5D45;
+    padding: 10px;
+    font-weight: 100;
+  }
+
+  .like{
+    position: absolute;
+    top: 9px; /* 19-10 (扣padding)*/
+    right: 12px; /* 22-10 */
+    padding: 10px;/* 增加點擊範圍 top,right需減10px */
+  }
+
+  &-img{
+    position: relative;
+  }
+
+  &-text{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAF0ED;
+  }
+}
+
+
+.name,.price{
+    padding: 14px 7px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+}
+.name{
+  width: 171px; 
+  border-right: 1px solid #EAF0ED;
+}
+.price{
+    width: 126px;
+}
+
+.addToCart{
+  width: 300px;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 20px;
+  background: #EAF0ED;
+
+}
+
+.page{
+  display: flex;
+  justify-content: flex-end;
+  
+  a{
+    width: 60px;
+    height: 60px;
+    border: solid 1px #EAF0ED;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 16px;
+  }
+
+
+}
+
+.addToCart, .pageNum{
+  &:hover{
+    background-color: #3F5D45;
+    color:#fff;
+  }
+}
+
+.front,.back{
+  &:hover{
+    background-color: #EAF0ED;
+  }
+}
